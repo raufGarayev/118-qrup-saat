@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}   
+
+.header {
+    
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #018DED url(./assets/img/background.jpg) center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    width: 100%;
+}
+
+
+.clock {
+    width: 20rem;
+    height: 20rem;
+    border: 10px solid #dfe4ea;
+    border-radius: 50%;
+    /* margin: 50px auto;  */
+    position:relative;
+    padding: 2rem;
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #dfe4ea, 
+        inset 0 0 10px #2f3542, 
+         0 0 10px rgba(0,0,0,0.2); 
+
+}
+
+.digital {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.dig {
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.dig-min {
+    width: 35.6px;
+    height: 36px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.dig-clocks {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transform: translateY(-3px); */
+}
+
+.sec-hand{
+    width: 50%;
+    height: 6px;
+    background: red;
+    position: absolute;
+    top: 50%; 
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    border-radius: 1rem;
+    
+}
+
+.min-hand {
+    width: 50%;
+    height: 6px;
+    background: #2f3542;
+    position: absolute;
+    top: 50%; 
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    border-radius: 1rem;
+}
+
+.hour-hand {
+    width: 35%;
+    height: 10px;
+    background: #2f3542;
+    position: absolute;
+    top: 50%; 
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    border-radius: 1rem;
+    left: 48px;
+}
